@@ -1,0 +1,6 @@
+acme_blog_homepage:
+    path:     /blog/{slug}
+    defaults: { _controller: AcmeBlogBundle:Blog:show, slug: naruto }
+blog:
+    path:      /blog/{page}
+    defaults:  { _controller: AcmeBlogBundle:Blog:index, page: 1 }
